@@ -16,7 +16,7 @@ npm start
 
 ## Run in Docker
 
-Download [Dockers](https://docs.docker.com/get-docker/?fbclid=IwAR3090nHyPStlsEjkmUfpwnOTxMfPmvckakDwg5SdQUzlEjG9SwiZya5o7o).
+Download [Docker](https://docs.docker.com/get-docker/?fbclid=IwAR3090nHyPStlsEjkmUfpwnOTxMfPmvckakDwg5SdQUzlEjG9SwiZya5o7o).
 
 Build docker image from DockerFile and files in context.
 

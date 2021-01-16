@@ -25,6 +25,28 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.0.2/typeit.min.js"></script>
+    <script>
+      $(function () {
+          new TypeIt('#types', {
+              speed: 50
+          })
+              .type('Chinese, Thai, Mexican')
+              .pause(300)
+              .options({ speed: 200 })
+              .delete(22)
+              .options({ speed: 45 })
+              .pause(300)
+              .type('Italian,Korean, Japanese')
+              .pause(500)
+              .options({ speed: 200 })
+              .delete(24)
+              .type('Vietnamese, American')
+              .pause(500)
+      });
+  </script>
+    
     <title>Welp, Lets Eat</title>
   </head>
   <body>
@@ -46,8 +68,12 @@
         </div>
       </div>
     </header>
-    <div id="image-banner"></div>
-    <div id='text'>Let's Eat!</div>
+    <div id="image-banner">
+      <div id='text'>Let's Eat!</div>
+    </div>
+    <p id= "types"></p> 
+    
+
     
       
     <!--

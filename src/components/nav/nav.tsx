@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Nav.css';
+import './nav.css';
 import { Button, Menu } from 'semantic-ui-react';
 
 const Nav: React.FC = () => {

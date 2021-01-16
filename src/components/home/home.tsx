@@ -1,4 +1,4 @@
-import './Home.css';
+import './home.css';
 import Socket from '../../Socket/Socket';
 
 const Home: React.FC = () => {

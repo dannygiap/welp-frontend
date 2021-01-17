@@ -1,0 +1,91 @@
+/* style of button */
+body {
+    background: #303841;
+    color: #FCF2CD;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+#logo {
+    height: 50px;
+}
+
+.button {
+    padding-top: 20px;
+}
+
+#image-banner {
+    background-image: url('../src/assets/img/noods.jpg');
+    background-size: cover;
+    position:relative;
+    width: 100%;
+    height: 300px;
+}
+#text {
+    position: absolute;
+    font-size: 50px;
+    top: 40px;
+    left: 60%;
+    width: 100%;
+    color: #000000;
+}
+
+#title {
+    font-family: 'Domine', sans-serif;
+    color: #000000;
+    text-align: left;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+#toggleButton {
+    width: 100px;
+    left: 10;
+    display: block;
+    position: relative;
+    float: right;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #67523e;
+    padding: 10px 18px;
+    border-radius: 21px;
+    white-space: nowrap;
+    background-color: transparent;
+    background-image: radial-gradient(#67523e 0,#67523e 75%,transparent 0,transparent 100%);
+    background-repeat: no-repeat;
+    background-size: 0 0;
+    background-position: 50% 50%;
+    border: 1px solid #67523e;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  #toggleButton:hover {
+    color: #ebf6e0;
+    background-size: 105% 150%;
+  }
+  
+  /* dark mode styles */
+  
+  .dark-mode {
+    background: #FCF2CD;
+    color: #816C61;
+  }
+  
+  .dark-mode .container {
+    background: #8390FA;
+  }
+  
+  .dark-mode h1 {
+    color: #220C10;
+  }

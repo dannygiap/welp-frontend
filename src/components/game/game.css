@@ -1,0 +1,10 @@
+h1 {
+    font-size:36px;
+  }
+  .flex{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height:80vh;
+    justify-content: space-around;
+  }

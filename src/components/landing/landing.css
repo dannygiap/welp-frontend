@@ -1,10 +1,10 @@
 /* style of button */
 body {
     background: #303841;
-    color: #FCF2CD;
+    color: #000000;
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -14,14 +14,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    position: absolute;
+    top: 200px;
+    width: 100%;
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
 
-#logo {
+#log {
     height: 50px;
+    padding-left: 3%;
 }
 
 .button {
@@ -29,27 +35,38 @@ code {
 }
 
 #image-banner {
-    background-image: url('../src/assets/img/noods.jpg');
+    background-image: url('../../assets/img/orange.jpg');
     background-size: cover;
     position:relative;
     width: 100%;
     height: 300px;
 }
 #text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    font-size: 50px;
+    font-size: 90px;
     top: 40px;
-    left: 60%;
     width: 100%;
-    color: #000000;
+    font-family: 'Open Sans'
+}
+#descript {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 30px;
+    top: 150px;
+    width: 100%;
+    color: gray;
 }
 
 #title {
-    font-family: 'Domine', sans-serif;
-    color: #000000;
     text-align: left;
     font-size: 40px;
     padding-left: 10px;
+    font-family: 'Open Sans'
 }
 
 #toggleButton {
@@ -61,7 +78,7 @@ code {
     margin: auto;
     font-family: sans-serif;
     font-weight: bold;
-    color: #67523e;
+    color: #4e3f30;
     padding: 10px 18px;
     border-radius: 21px;
     white-space: nowrap;
@@ -83,7 +100,7 @@ code {
   /* dark mode styles */
   
   .dark-mode {
-    background: #FCF2CD;
+    background: #f8ebbc;
     color: #816C61;
   }
   
@@ -93,4 +110,24 @@ code {
   
   .dark-mode h1 {
     color: #220C10;
+  }
+  .boxes {
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+
+  }
+  .land {
+    padding-top: 5%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+
+
   }

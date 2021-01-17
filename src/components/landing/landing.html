@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" href="landing.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -32,18 +34,19 @@
       new TypeIt('#types', {
           speed: 50
       })
-          .type('Chinese, Thai, Mexican')
+          .type('American, Thai, Mexican')
           .pause(300)
           .options({ speed: 200 })
-          .delete(22)
+          .delete(23)
           .options({ speed: 45 })
           .pause(300)
           .type('Italian, Korean, Japanese')
           .pause(300)
           .options({ speed: 200 })
           .delete(25)
-          .type('Vietnamese, American')
+          .type('Vietnamese, Chinese')
           .pause(500)
+
   });
     </script>
     
@@ -64,14 +67,16 @@
     <header>
 			<div class="content">
         <div id="title">Welp
-        <img id ='logo' src = "../src/assets/img/Welp.png "/>
+        <img id ='log' src = "../../assets/img/Welp.png "/>
         </div>
       </div>
     </header>
     <div id="image-banner">
       <div id='text'>Let's Eat!</div>
+      <div id='descript'>Choosing Food Made Simple.</div>
+      <span id="types"></span>
     </div>
-    <span id="types"></span>
+    
     
 
     

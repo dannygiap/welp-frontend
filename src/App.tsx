@@ -9,12 +9,12 @@ import Game from './components/game/game';
 function App() {
   return (
     <div className="App">
-      <Nav/>
-      <header className ="App-header">
+      <Nav />
+      <header className="App-header">
         <Router>
           <Switch>
-              <Route path ="/" exact component = {Home}/>
-              <Route path ="/game" component= {Game}/>
+            <Route path="/" exact component={Home} />
+            <Route path="/game" component={Game} />
           </Switch>
         </Router>
       </header>

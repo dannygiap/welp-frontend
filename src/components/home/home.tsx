@@ -4,12 +4,14 @@ import Socket from '../../Socket/Socket';
 const Home: React.FC = () => {
   return (
     <div id="home-container">
-      <h2>Hi, dannygiap</h2>
-      <form id="Game-Form">
-        <input type="text" placeholder="Game ID" />
-        <input type="submit" value="Join Game" />
+      <h2 id="greeting">Hi, dannygiap</h2>
+
+      <form id="game-form">
+        <input type="text" placeholder="Game ID" className="input" />
+        <input type="submit" value="Join Game" className="button red" />
       </form>
-      <button>Create Game</button>
+
+      <button className="button blue">Create Game</button>
     </div>
   );
 };

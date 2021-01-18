@@ -10,13 +10,13 @@ import Landing from './components/landing/landing';
 function App() {
   return (
     <div className="App">
-      <Nav/>
-      <header className ="App-header">
+      <Nav />
+      <header className="App-header">
         <Router>
           <Switch>
-              <Route path ="/" exact component = {Home}/>
-              <Route path ="/game" component= {Game}/>
-              <Route path ="/landing" component= {Landing}/>
+            <Route path="/" exact component={Home} />
+            <Route path="/game" component={Game} />
+            <Route path="/landing" component={Landing} />
           </Switch>
         </Router>
       </header>

@@ -1,10 +1,7 @@
 import React from 'react';
 import Game from '../components/game/game';
 
+//TODO: define context (what type of state do we need to define)
 const GameContext = React.createContext({});
 
-const GameProvider: React.FC = () => {
-  return <GameContext.Provider value={{}}></GameContext.Provider>;
-};
-
-export default GameProvider;
+export default GameContext;

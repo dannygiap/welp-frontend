@@ -1,37 +1,5 @@
-#game-form {
+#Game-Form {
   display: flex;
-  flex-direction: column;
-  width: 15em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#greeting {
-  margin-bottom: 2em;
-}
-
-.input {
-  border-style: none;
-  border-radius: 20px;
-  text-align: center;
-  padding: 8px;
-}
-
-.button {
-  padding: 10px;
-  border-radius: 20px;
-  border-style: none;
-  color: #f1f6f9;
-  cursor: pointer;
-  width: 15em;
-}
-
-.blue {
-  background-color: #00adb5;
-  margin-top: 5em;
-}
-
-.red {
-  background-color: #f95959;
-  margin-top: 0.2em;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

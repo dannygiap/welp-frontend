@@ -14,7 +14,7 @@ function App() {
       <header className="App-header">
         <Router>
           <Switch>
-            <Route path="/" exact component={Home} />
+            <Route path="/home" exact component={Home} />
             <Route path="/game" component={Game} />
             <Route path="/landing" component={Landing} />
           </Switch>

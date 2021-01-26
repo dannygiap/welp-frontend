@@ -1,10 +1,14 @@
 import './home.css';
 import Socket from '../../Socket/Socket';
 import { useState } from 'react';
+import { Redirect, useHistory } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const [gameID, setGameID] = useState('');
-
+  let history = useHistory();
+  const redirect = () => {
+    history.push('/game');
+  };
   return (
     <div id="home-container">
       <h2 id="greeting">Hi, dannygiap</h2>
@@ -29,7 +33,9 @@ const Home: React.FC = () => {
         <input type="submit" value="Join Game" className="button red" />
       </form>
 
-      <button className="button blue">Create Game</button>
+      <button className="button blue" onClick={redirect}>
+        Create Game
+      </button>
     </div>
   );
 };

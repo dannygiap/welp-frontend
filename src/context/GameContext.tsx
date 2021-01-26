@@ -1,7 +1,17 @@
 import React from 'react';
-import Game from '../components/game/game';
+
+type Player = {
+  id: string;
+  username: string;
+};
 
 //TODO: define context (what type of state do we need to define)
-const GameContext = React.createContext({});
+interface GameContextProps {
+  players: Player[];
+  isStarted: boolean;
+  isRestaurantRound: boolean;
+  isVoting: boolean;
+  restaurants: string[];
+}
 
-export default GameContext;
+export default React.createContext<Partial<GameContextProps>>({});

@@ -9,13 +9,21 @@ const Game: React.FC = () => {
     console.log(context);
   }, [context.state]);
   return (
-    <div className="flex">
-      <div>
-        <h1> Players</h1>
-      </div>
-      <Restuarant />
-      <div>
-        <h1>Chat</h1>
+    <div>
+      <h3>{`Game ID: ${context.state.gameID}`}</h3>
+      <div className="flex">
+        <div>
+          <h1> Players</h1>
+          <ul>
+            {context.state.players.map((player) => {
+              return <li key={context.state.userID}>{player}</li>;
+            })}
+          </ul>
+        </div>
+        <Restuarant />
+        <div>
+          <h1>Chat</h1>
+        </div>
       </div>
     </div>
   );

@@ -14,11 +14,18 @@ export const gameReducer = (state, action) => {
       return { ...state, userID: action.payload.id };
     case ACTIONS.CREATE_GAME: {
       console.log('inside reducer');
-      return { ...state, gameID: action.payload.gameID };
+      return {
+        ...state,
+        gameID: action.payload.gameID,
+        players: action.payload.players,
+      };
     }
-    case ACTIONS.JOIN_GAME: {
-      return { ...state, gameID: action.payload.gameID };
-    }
+    case ACTIONS.JOIN_GAME:
+      return {
+        ...state,
+        gameID: action.payload.gameID,
+        players: action.payload.players,
+      };
     default:
       return { ...state };
   }

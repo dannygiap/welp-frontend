@@ -32,12 +32,18 @@ const GlobalState = (props) => {
     const socket = Socket.getSocket();
     socket.on('game-created', (data) => {
       console.log('creating game ');
-      dispatch({ type: ACTIONS.CREATE_GAME, payload: { gameID: data.gameID } });
+      dispatch({
+        type: ACTIONS.CREATE_GAME,
+        payload: { gameID: data.gameID, players: data.players },
+      });
     });
 
     socket.on('player-joined', (data) => {
       console.log('creating game ');
-      dispatch({ type: ACTIONS.JOIN_GAME, payload: { gameID: data.gameID } });
+      dispatch({
+        type: ACTIONS.JOIN_GAME,
+        payload: { gameID: data.gameID, players: data.players },
+      });
     });
 
     return () => {

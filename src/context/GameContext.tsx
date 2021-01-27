@@ -9,7 +9,7 @@ interface Player {
 interface GameContext {
   userID: string;
   gameID: string;
-  players: Player[];
+  players: string[]; //might change type to Player[] later
   isStarted: boolean;
   isRestaurantRound: boolean;
   isVoting: boolean;

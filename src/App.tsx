@@ -6,6 +6,7 @@ import Nav from './components/nav/nav';
 import Home from './components/home/home';
 import Game from './components/game/game';
 import Landing from './components/landing/landing';
+import GlobalState from './context/GlobalState';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <header className="App-header">
         <Router>
           <Switch>
-            <Route path="/home" exact component={Home} />
+            <Route path="/" exact component={Home} />
             <Route path="/game" component={Game} />
             <Route path="/landing" component={Landing} />
           </Switch>

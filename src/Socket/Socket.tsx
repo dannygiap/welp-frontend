@@ -3,10 +3,10 @@ import io from 'socket.io-client';
 class Socket {
   static socket: SocketIOClient.Socket;
 
-  public static initializeSocket(gameID: string): void {
+  public static initializeSocket(): void {
     this.socket = io('http://localhost:4000/', {
       transports: ['websocket'],
-      query: `gameID=${gameID}`,
+      query: ``,
     });
   }
 

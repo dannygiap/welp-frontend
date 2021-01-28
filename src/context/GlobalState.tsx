@@ -1,12 +1,10 @@
-import React, { useState, useReducer, useEffect } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import GameContext from './GameContext';
 import { ACTIONS, gameReducer } from './reducers';
 import Socket from '../Socket/Socket';
-import { Accordion } from 'semantic-ui-react';
 
 //TODO: add socket handlers and setup reducers
 const GlobalState = (props) => {
-  const [userID, setUserID] = useState('');
   const [state, dispatch] = useReducer(gameReducer, {
     userID: 'yoyoyo',
     gameID: '',
@@ -23,7 +21,6 @@ const GlobalState = (props) => {
     const socket = Socket.getSocket();
     socket.on('connected', (data) => {
       dispatch({ type: ACTIONS.INIT_USER, payload: { id: data.id } });
-      setUserID(data.id);
       console.log(`id ${data.id} has connected to socket server`);
     });
   }, []);
@@ -39,7 +36,7 @@ const GlobalState = (props) => {
     });
 
     socket.on('player-joined', (data) => {
-      console.log('creating game ');
+      console.log('a player joined the game ');
       dispatch({
         type: ACTIONS.JOIN_GAME,
         payload: { gameID: data.gameID, players: data.players },

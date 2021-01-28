@@ -1,12 +1,10 @@
 import './App.css';
-import { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import Nav from './components/nav/nav';
 import Home from './components/home/home';
 import Game from './components/game/game';
 import Landing from './components/landing/landing';
-import GlobalState from './context/GlobalState';
 
 function App() {
   return (

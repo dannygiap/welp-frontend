@@ -1,6 +1,7 @@
 import Restuarant from '../restuarant/restuarant';
 import GameContext from '../../context/GameContext';
 import { useContext, useEffect } from 'react';
+import uuid from 'react-uuid';
 
 import './game.css';
 const Game: React.FC = () => {
@@ -16,7 +17,7 @@ const Game: React.FC = () => {
           <h1> Players</h1>
           <ul>
             {context.state.players.map((player) => {
-              return <li key={context.state.userID}>{player}</li>;
+              return <li key={uuid()}>{player}</li>;
             })}
           </ul>
         </div>

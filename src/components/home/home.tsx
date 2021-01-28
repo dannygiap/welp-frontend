@@ -1,7 +1,7 @@
 import './home.css';
 import Socket from '../../Socket/Socket';
 import { useState, useContext, useEffect } from 'react';
-import { Redirect, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import GameContext from '../../context/GameContext';
 import uuid from 'react-uuid';
 

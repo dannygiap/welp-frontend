@@ -26,6 +26,12 @@ export const gameReducer = (state, action) => {
         gameID: action.payload.gameID,
         players: action.payload.players,
       };
+    case ACTIONS.START_RESTAURANT_PHASE:
+      return {
+        ...state,
+        isStarted: action.payload.isStarted,
+        isRestaurantRound: action.payload.isRestaurantRound,
+      };
     default:
       return { ...state };
   }

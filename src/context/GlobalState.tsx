@@ -12,6 +12,7 @@ const GlobalState = (props) => {
     isStarted: false,
     isRestaurantRound: false,
     isVoting: false,
+    isWinner: false,
     restaurants: [],
   });
 
@@ -40,6 +41,16 @@ const GlobalState = (props) => {
       dispatch({
         type: ACTIONS.JOIN_GAME,
         payload: { gameID: data.gameID, players: data.players },
+      });
+
+      socket.on('start-game', (data) => {
+        dispatch({
+          type: ACTIONS.START_RESTAURANT_PHASE,
+          payload: {
+            isStarted: data.isStarted,
+            isRestaurant: data.isRestaurant,
+          },
+        });
       });
     });
 

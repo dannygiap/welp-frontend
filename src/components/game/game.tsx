@@ -7,7 +7,7 @@ import './game.css';
 const Game: React.FC = () => {
   const context = useContext(GameContext);
   useEffect(() => {
-    console.log(context);
+    console.log(context.state);
   }, [context.state]);
   return (
     <div>

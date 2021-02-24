@@ -1,4 +1,5 @@
 import React from 'react';
+import { flattenDiagnosticMessageText } from 'typescript';
 
 interface Player {
   id: string;
@@ -13,6 +14,7 @@ interface GameContext {
   isStarted: boolean;
   isRestaurantRound: boolean;
   isVoting: boolean;
+  isWinner: false;
   restaurants: string[];
 }
 
@@ -27,6 +29,7 @@ export default React.createContext<{
     isStarted: false,
     isRestaurantRound: false,
     isVoting: false,
+    isWinner: false,
     restaurants: [],
   },
   dispatch: () => null,
